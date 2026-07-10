@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TableData Extractor",
+  "version": "1.0.0",
+  "description": "Extracts tables from websites to CSV/JSON or sends them to a Webhook.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/contentScript.ts"]
+    }
+  ]
+}

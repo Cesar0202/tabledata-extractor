@@ -1,0 +1,21 @@
+{
+  "name": "tabledata-extractor",
+  "version": "1.0.0",
+  "description": "TableData Extractor - Chrome Extension and Landing Page",
+  "private": true,
+  "workspaces": [
+    "extension",
+    "landing"
+  ],
+  "scripts": {
+    "dev:landing": "npm run dev --workspace=landing",
+    "build:landing": "npm run build --workspace=landing",
+    "dev:extension": "npm run dev --workspace=extension",
+    "build:extension": "npm run build --workspace=extension",
+    "test:extension": "npm run test --workspace=extension",
+    "package": "node scripts/package.js"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1"
+  }
+}
