@@ -1,0 +1,11 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+  allowedDevOrigins: ['192.168.100.22'],
+  devIndicators: {
+    buildActivity: false,
+  },
+};
+
+export default nextConfig;
